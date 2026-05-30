@@ -2,7 +2,8 @@
 
 Rust systems engineer working on EVM internals, MEV, and low-latency on-chain
 infrastructure. I build read-only tooling that decodes and reasons about live
-chain activity, and I contribute to the Rust Ethereum stack.
+chain activity, and I contribute to the core Rust Ethereum stack (reth, foundry,
+revm, Lighthouse), including merged PRs in Paradigm's reth and foundry.
 
 Open to **full-remote** roles in blockchain infrastructure, MEV, and crypto-quant.
 
@@ -27,14 +28,13 @@ computes gas/ns efficiency, and surfaces mispriced opcodes.
 
 ### Open source
 
-Contributing to **[Lighthouse](https://github.com/sigp/lighthouse)**, the Rust
-Ethereum consensus client:
+Contributions across the Rust Ethereum stack:
 
-- [#9373](https://github.com/sigp/lighthouse/pull/9373) instrument the fork
-  choice lock with hold-time metrics and backtraces (#8147)
-- [#9376](https://github.com/sigp/lighthouse/pull/9376) gate custody backfill
-  peer selection on custody columns, a PeerDAS liveness fix with a regression
-  test (#8308)
+- **[reth](https://github.com/paradigmxyz/reth)** (Paradigm) — merged [#22168](https://github.com/paradigmxyz/reth/pull/22168) (fix an ExEx notification-channel stall during backfill); further PRs on engine prewarming, RPC trace timeouts, and MDBX storage perf.
+- **[foundry](https://github.com/foundry-rs/foundry)** (Paradigm) — merged [#13389](https://github.com/foundry-rs/foundry/pull/13389) (skip redundant config remapping detection); async trace identification and faster anvil block mining.
+- **[revm](https://github.com/bluealloy/revm)** (bluealloy) & **[alloy](https://github.com/alloy-rs)** — storage / allocation perf, unsafe-bytecode debug assertions, smaller proof-verification errors.
+- **[rbuilder](https://github.com/flashbots/rbuilder)** (Flashbots) — track EXTCODEHASH / EXTCODESIZE / EXTCODECOPY in the state-access inspector.
+- **[Lighthouse](https://github.com/sigp/lighthouse)** (Sigma Prime) — [#9373](https://github.com/sigp/lighthouse/pull/9373) fork-choice lock instrumentation, [#9376](https://github.com/sigp/lighthouse/pull/9376) PeerDAS custody-backfill liveness fix.
 
 ### Stack
 
