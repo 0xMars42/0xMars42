@@ -43,4 +43,4 @@ networking and low-latency data paths.
 
 ### Contact
 
-[GitHub](https://github.com/0xMars42) &middot; [X](https://x.com/0xMars42)
+[jmastoras@proton.me](mailto:jmastoras@proton.me) &middot; [GitHub](https://github.com/0xMars42) &middot; [X](https://x.com/0xMars42)
