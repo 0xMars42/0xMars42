@@ -26,15 +26,6 @@ tests, CI.
 Per-opcode EVM microbenchmark on revm. Measures real CPU nanoseconds per opcode,
 computes gas/ns efficiency, and surfaces mispriced opcodes.
 
-### Open source
-
-Contributions across the Rust Ethereum stack:
-
-- **[reth](https://github.com/paradigmxyz/reth)** (Paradigm) — merged [#22168](https://github.com/paradigmxyz/reth/pull/22168) (fix an ExEx notification-channel stall during backfill); further PRs on engine prewarming, RPC trace timeouts, and MDBX storage perf.
-- **[foundry](https://github.com/foundry-rs/foundry)** (Paradigm) — merged [#13389](https://github.com/foundry-rs/foundry/pull/13389) (skip redundant config remapping detection); async trace identification and faster anvil block mining.
-- **[revm](https://github.com/bluealloy/revm)** (bluealloy) & **[alloy](https://github.com/alloy-rs)** — storage / allocation perf, unsafe-bytecode debug assertions, smaller proof-verification errors.
-- **[rbuilder](https://github.com/flashbots/rbuilder)** (Flashbots) — track EXTCODEHASH / EXTCODESIZE / EXTCODECOPY in the state-access inspector.
-- **[Lighthouse](https://github.com/sigp/lighthouse)** (Sigma Prime) — [#9373](https://github.com/sigp/lighthouse/pull/9373) fork-choice lock instrumentation, [#9376](https://github.com/sigp/lighthouse/pull/9376) PeerDAS custody-backfill liveness fix.
 
 ### Stack
 
